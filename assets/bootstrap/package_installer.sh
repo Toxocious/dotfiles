@@ -59,6 +59,7 @@ packages=(
     neofetch
     file-roller
     starship
+    noto-fonts
     papirus-icon-theme
     ttf-jetbrains-mono-nerd
     noto-fonts-emoji
