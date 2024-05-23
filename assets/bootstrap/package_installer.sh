@@ -19,13 +19,12 @@ packages=(
     python-requests
     pacman-contrib
     linux-headers
-    # # nvidia gpu packages
-    # nvidia-dkms
-    # nvidia-settings
-    # libva
-    # libva-nvidia-driver-git
-    # # personal packages
+    nvidia-dkms
+    nvidia-utils
+    lib32-nvidia-utils
     hyprland
+    xdg-desktop-portal-hyprland
+    # # personal packages
     zsh
     zsh-completions
     fzf
@@ -36,7 +35,6 @@ packages=(
     swaylock-effects
     wofi
     wlogout
-    xdg-desktop-portal-hyprland
     swappy
     wl-clipboard
     grim
