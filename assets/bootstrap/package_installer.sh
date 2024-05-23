@@ -19,11 +19,30 @@ packages=(
     python-requests
     pacman-contrib
     linux-headers
+    # graphical drivers
+    xorg-xinit
+    xorg-server
+    # intel
+    mesa
+    intel-media-driver
+    libva-intel-driver
+    vulkan-intel
+    # amd
+    libva-mesa-driver
+    vulkan-radeon
+    xf86-video-ati
+    xf86-video-amdgpu
+    # nvidia
+    dkms
     nvidia-dkms
     nvidia-utils
     lib32-nvidia-utils
+    # vmware
+    xf86-video-vmware
+    # hyprland
     hyprland
     xdg-desktop-portal-hyprland
+    xwaylandvideobridge-git
     # # personal packages
     zsh
     zsh-completions
@@ -74,8 +93,7 @@ packages=(
     npm
     pnpm
     noto-fonts-cjk
-    # # packages to improve screensharing via certain apps
-    xwaylandvideobridge-git
+    
 )
 
 countdown=5  # Set the countdown time in seconds
