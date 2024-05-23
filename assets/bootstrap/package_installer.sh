@@ -88,6 +88,9 @@ for i in $(seq $countdown -1 1); do
     read -t 1 -n 1 && exit 1  # Wait for a key press and exit if one is detected
 done
 
+# Install Paru
+./paru_installer.sh
+
 # Run the update command
 paru -Syu --needed "${packages[@]}"
 
