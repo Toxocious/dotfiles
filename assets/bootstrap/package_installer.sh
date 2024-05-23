@@ -76,7 +76,7 @@ packages=(
     pnpm
     noto-fonts-cjk
     # # packages to improve screensharing via certain apps
-    xwaylandvideobridge-cursor-mode-2-git
+    xwaylandvideobridge-git
 )
 
 countdown=5  # Set the countdown time in seconds
