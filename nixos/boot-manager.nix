@@ -43,10 +43,16 @@
         grub = {
             enable = true;
             useOSProber = false;
-            efiSupport = false;
+            efiSupport = true;
+            efiInstallAsRemovable = true;
             splashImage = null;
 
-            device = "/dev/sda";
+            device = "nodev";
+        };
+
+        efi = {
+          canTouchEfiVariables = false; 
+          efiSystemMountPoint = "/boot"; 
         };
       };
     };
