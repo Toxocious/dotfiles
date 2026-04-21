@@ -7,5 +7,7 @@
     powerOnBoot = true;
   };
 
+  hardware.enableRedistributableFirmware = true;
+
   services.blueman.enable = true;
 }

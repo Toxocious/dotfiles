@@ -20,7 +20,7 @@ in
   # Additional System Packages
   environment.systemPackages = with pkgs; [
     vulkan-tools
-    
+
     glxinfo
 
     libva-utils
@@ -95,6 +95,10 @@ in
 
   # Hardware & Nvidia configuration
   hardware = {
+    cpu = {
+        updateMicrocode = true;
+    };
+
     nvidia = {
       open = true;
       nvidiaSettings = true;
@@ -105,7 +109,7 @@ in
       forceFullCompositionPipeline = true;
 
       modesetting.enable = true;
-   
+
       powerManagement = {
         enable = false;
         finegrained = false;
@@ -128,7 +132,7 @@ in
     graphics = {
       enable = true;
       enable32Bit = true;
-      
+
       package = nvidiaDriverChannel;
 
       extraPackages = with pkgs; [
@@ -137,14 +141,14 @@ in
         nvidia-vaapi-driver
 
         vaapiVdpau
-        
+
         mesa
-        
+
         egl-wayland
-        
+
         vulkan-loader
         vulkan-validation-layers
-        
+
         libva
         libglvnd       # OpenGL support
         libvdpau       # Video acceleration
@@ -158,7 +162,7 @@ in
     enable = true;
 
     description = "NVIDIA Persistence Daemon";
-    
+
     wantedBy = [ "multi-user.target" ];
   };
 }
